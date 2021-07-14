@@ -1,8 +1,12 @@
 {
   "name": "@fredjgermain/utils", 
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "",
-  "main": "index.js", 
+  "main": "build/index.js", 
+  "types": "build/index.d.ts", 
+  "files": [ 
+    "/build" 
+  ], 
 
   "publishConfig": { 
     "registry": "https://npm.pkg.github.com" 
@@ -12,7 +16,7 @@
   "scripts": {
     "start": "node utils.js", 
     "dev": "nodemon utils.ts", 
-    "build": "tsc" 
+    "build": "npx tsc" 
   },
   "keywords": [],
   "author": "Fred Jean-Germain",
