@@ -14,7 +14,7 @@
       "esnext.asynciterable"
     ],
     "sourceMap": true,
-    "outDir": "./dist",
+    "outDir": "",
     "moduleResolution": "node",
     "strict": true,
     "importsNotUsedAsValues": "remove",
@@ -40,10 +40,5 @@
   },
   "exclude": [
     "node_modules"
-  ],
-  "include": [
-    "./src",
-    "./src/**/*.tsx",
-    "./src/**/*.ts"
   ]
 }
