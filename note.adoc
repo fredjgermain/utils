@@ -1,0 +1,118 @@
+# TODO 
+
+
+(from 01-React-Mongoose) 
+  array utils methods 
+  date utils methods 
+  string utils methods 
+  value & type utils methods 
+    ?include interface IType? 
+  html utils methods 
+
+  inputs components 
+  editor_reader components 
+  filter components 
+  pager components 
+  table components 
+  toggle components 
+
+
+(from typegqlclient & gql_mongoose_tsc) 
+interface: [ 
+  IType, 
+  IField, 
+  IEntry, 
+  IOption, 
+  IModel, 
+  IErrProp, 
+  ?IMongooseField? 
+] 
+
+
+
+# SOURCE 
+// https://www.typescriptlang.org/docs/handbook/compiler-options.html
+
+// https://www.tsmean.com/articles/how-to-write-a-typescript-library/
+
+
+# Npm init with typescript 
+> npm init -y 
+> npx tsc --init 
+> npm i @types/node typescript ts-node nodemon 
+
+# Git init 
+> touch .gitignore 
+> git init 
+> git remote add origin https://github.com/fredjgermain/utils.git 
+
+// > git remote set-url origin https://github.com/fredjgermain/utils.git 
+
+# package.json 
+  "name": "@fredjgermain/<packagename>", 
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js", 
+  "types": "build/index.d.ts", 
+
+// restrict consumer's access to the package content 
+  "files": [ 
+    "/build" 
+  ], 
+
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com" 
+  }, 
+  "repository": "https://github.com/fredjgermain/<packagename>", 
+
+
+
+# tsconfig.json 
+{
+  "compilerOptions": { 
+    "module": "commonjs", 
+    "target": "es6",
+    "declaration": true, 
+    "outDir": "./build"
+  },
+  "include": [
+    "src/**/*"
+  ]
+}
+
+
+# Typescript transpile
+> npx tsc 
+
+// With proper configs in package.json and tsconfig.js it should transpile a series of *.js and *.d.ts in './build' from './src' *.ts files. 
+
+
+## Then login 
+npm login --scope=@fredjgermain --registry=https://npm.pkg.github.com 
+
+> Username: USER
+> Password: TOKEN
+> Email: EMAIL
+
+> Username: fredjgermain
+> Password: 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
+> Email: fredjgermain@gmail.com
+
+
+
+## Install Storybook
+> npx sb init ?
+
+or 
+
+> npm i storybook ?
+
+
+## Modif *.storybook/main.js*
+
+> "stories": [
+    "../src/**/*.stories.tsx"
+ ],
+
+
+
